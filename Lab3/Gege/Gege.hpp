@@ -1,0 +1,1 @@
+void adunare(int a,int b);

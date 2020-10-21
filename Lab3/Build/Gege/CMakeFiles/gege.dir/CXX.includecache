@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/voldemort/Desktop/IEP/Gege/Gege.cpp
+iostream
+-
+Gege.hpp
+/home/voldemort/Desktop/IEP/Gege/Gege.hpp
+
+/home/voldemort/Desktop/IEP/Gege/Gege.hpp
+

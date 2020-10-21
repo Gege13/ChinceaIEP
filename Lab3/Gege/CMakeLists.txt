@@ -1,0 +1,1 @@
+add_library(gege Gege.cpp Gege.hpp)

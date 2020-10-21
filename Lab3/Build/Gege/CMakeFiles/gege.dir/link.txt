@@ -1,0 +1,2 @@
+/usr/bin/ar qc libgege.a  CMakeFiles/gege.dir/Gege.cpp.o
+/usr/bin/ranlib libgege.a
