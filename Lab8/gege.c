@@ -9,18 +9,18 @@ MODULE_LICENSE("GPL");
 
 void adunare(int a,int b) {
     
-    pr_debug (a+b);
+    printk ("%d", a+b);
 }
 
 void scadere (int a,int b){
 
-    pr_debug (a-b);
+    printk ("%d", a-b);
 
 }
 
-void prim() {
+void prim(void) {
     int n, i, flag = 0;
-    pr_debug("Enter a positive integer: ");
+    printk("Enter a positive integer: ");
     n=20;
 
     for (i = 2; i <= n / 2; ++i) {
@@ -33,19 +33,19 @@ void prim() {
     }
 
     if (n == 1) {
-        pr_debug("1 is neither prime nor composite.");
+        printk(" 1 is neither prime nor composite.");
     }
     else {
         if (flag == 0)
-            pr_debug("%d is a prime number.", n);
+            printk("%d is a prime number.", n);
         else
-            pr_debug("%d is not a prime number.", n);
+            printk("%d is not a prime number.", n);
     }
 
 }
 
 
-void doId() {
+void doId(void) {
    adunare(2,3);
    scadere(4,3);
 
@@ -53,14 +53,14 @@ void doId() {
 
 static int dummy_init(void)
 {
-        pr_debug("Hi\n");
+        printk("Hi\n");
         doId();
         return 0;
 }
 
 static void dummy_exit(void)
 {
-        pr_debug("Bye\n");
+        printk("Bye\n");
         prim();
 }
 
