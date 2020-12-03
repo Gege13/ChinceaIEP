@@ -1,0 +1,1 @@
+cmd_/home/voldemort/Desktop/ChinceaIEP/Lab9/iep9.ko := ld -r -m elf_x86_64  -z max-page-size=0x200000  --build-id  -T ./scripts/module-common.lds -o /home/voldemort/Desktop/ChinceaIEP/Lab9/iep9.ko /home/voldemort/Desktop/ChinceaIEP/Lab9/iep9.o /home/voldemort/Desktop/ChinceaIEP/Lab9/iep9.mod.o;  true
